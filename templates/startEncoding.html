@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{%block content%}
+<div class="container-fluid h-100 ">
+        <div class="text-center">
+            <h1 class="pt-5">Image Steganography</h1>
+        </div>
+        <div class="row mt-5 w-100">
+            <div class="col-3 col-xs-3">
+            </div>
+            <div class="col-3 col-xs-3">
+                <a href="/encode" style="text-decoration:none;"><button type="button" class="btn btn-primary btn-lg btn-block">Encode</button></a>
+            </div>
+            <div class="col-3 col-xs-3">
+                <a href="/decode" style="text-decoration:none;"><button type="button" class="btn btn-primary btn-lg btn-block">Decode</button></a>
+            </div>
+            <div class="col-3 col-xs-3">
+            </div>
+        </div>
+</div>
+{%endblock%}

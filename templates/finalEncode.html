@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{%block content%}
+<div class="container w-75">
+    <div class="text-center">
+        <h3 class="text-center p-3 pt-5" style="text-transform: uppercase;">Encode - step 3</h3>
+        <h3 class="pt-5">We've encoded the picture.</h3>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-4 col-xs-4">
+            <a href="{{url_for('static', filename='encode/encoded.png')}}" style="text-decoration:none;" download><button type="button" class="btn btn-primary btn-lg btn-block">Download Image</button></a>
+        </div>
+        <div class="col-4 col-xs-4">
+            <a href="/" style="text-decoration:none;"><button type="button" class="btn btn-primary btn-lg btn-block">Back to home</button></a>
+        </div>
+        <div class="col-4 col-xs-4">
+            <a href="/decode" style="text-decoration:none;"><button type="button" class="btn btn-primary btn-lg btn-block">Decode image</button></a>
+        </div>
+    </div>
+</div>
+{%endblock%}

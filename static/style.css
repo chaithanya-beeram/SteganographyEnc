@@ -1,0 +1,56 @@
+*{
+    font-family:'Barlow', sans-serif,'Roboto Mono', monospace;
+}
+
+@-webkit-keyframes color_change {
+	from { color:#000000; }
+	to { color: #FFFACD; }
+}
+@-moz-keyframes color_change {
+	from { color: #000000; }
+	to { color: #FFFACD; }
+}
+@-ms-keyframes color_change {
+	from { color: #000000; }
+	to { color: #FFFACD; }
+}
+@-o-keyframes color_change {
+	from { color: #000000; }
+	to { color: #FFFACD; }
+}
+@keyframes color_change {
+	from { color: #000000; }
+	to { color: #FFFACD; }
+}
+
+.custom-gradient{
+    font-size: 30px;
+    background-image: linear-gradient(360deg, rgba(212, 236, 125, 0.93) 0%,
+    rgb(190, 236, 129) 99%, rgb(190, 236, 129) 100%);
+}
+
+.title{
+    text-transform: uppercase;
+}
+
+
+.git:hover{
+    color: #BDB76B;
+}
+
+.linkedin:hover{
+    color: #FFE4B5;
+}
+
+.cite, .linkedin, .git {
+    color: #000000;
+}
+
+.cite:hover {
+    color: rgb(243, 232, 129);
+    -webkit-animation: color_change 0.5s;
+	-moz-animation: color_change 0.5s;
+	-ms-animation: color_change 0.5s;
+	-o-animation: color_change 0.5s;
+	animation: color_change 0.5s;
+}

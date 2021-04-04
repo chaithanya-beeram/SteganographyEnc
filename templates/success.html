@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{%block content%}
+<div class="container w-75">
+    <h3 class="text-center p-3" style="text-transform: uppercase;">Encode - step 2</h3>
+    <form action="/final" method="post">
+        <div class="row">
+            <div class="col-8 col-xs-8">
+                <div class="form-group">
+                    <label for="text">Enter text:</label>
+                    <input type="text" class="form-control" id="text" name="text" placeholder="Enter text to add to picture" required/>
+                </div>
+            </div>
+            <div class="col-4 col-xs-4">
+                <div class="form-group">
+                    <label for="crypto">Crypto algorithm</label>
+                    <select class="custom-select mr-sm-2" id="crypto" name="crypto" required>
+                        <option value="none" selected>none</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+             <div class="col-12  col-xs-12" id="delay">
+             </div>
+        </div>
+        <div class="row">
+             <div class="col-12  col-xs-12">
+                 <div class="container text-center" id="explain">
+                    
+                 </div>
+             </div>
+        </div>
+        <div class="row">
+             <div class="col-3 col-xs-4">
+             </div>
+             <div class="col-3 col-xs-3">
+                <a href="/encode" style="text-decoration: none;"><button class="btn btn-danger btn-lg btn-block" type="button">Back</button></a>
+             </div>
+             <div class="col-3 col-xs-3">
+                 <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+             </div>
+             <div class="col-3 col-xs-3">
+             </div>
+        </div>
+    </form>
+</div>
+{%endblock%}
